@@ -1,0 +1,107 @@
+.product-management {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 180px;
+  }
+  
+  .product-name {
+    font-weight: bold;
+    color: #005ea6;
+    margin-bottom: 8px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  
+  .edit-button, .delete-button {
+    background-color: #0073b1;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    width: 80px;
+  }
+  
+  .edit-button:hover {
+    background-color: #005288;
+  }
+  
+  .delete-button {
+    background-color: #d32f2f;
+  }
+  
+  .delete-button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .confirm-delete, .cancel-delete {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .confirm-delete {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .cancel-delete {
+    background-color: #888;
+    color: white;
+  }
+  
