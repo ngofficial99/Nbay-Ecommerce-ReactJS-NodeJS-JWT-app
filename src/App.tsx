@@ -11,6 +11,7 @@ import ProductManagement from "./components/ProductManagement";
 import EditProduct from "./components/EditProduct";
 import { useParams } from "react-router-dom";
 import Cart from "./components/Cart";
+import Login from "./components/Login";
 function App() {
   // const [userId, setUserId] = useState(1);
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="/addProduct" Component={AddProduct} />
           <Route path="/editProduct:/id" element={<EditProductWrapper/>} />
           <Route path="/cart" Component={Cart}/>
+          <Route path="login" Component={Login}/>
         
 
         </Routes>

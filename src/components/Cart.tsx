@@ -12,6 +12,8 @@ const Cart: React.FC = () => {
   const handleRemove = async (productId: number) => {
     try {
       await dispatch(removeFromCartAsync(productId)).unwrap();
+      console.log("Product removed from cart");
+      
     } catch (error) {
       console.error("Failed to remove product from cart:", error);
     }

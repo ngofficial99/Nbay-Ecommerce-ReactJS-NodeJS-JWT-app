@@ -3,8 +3,9 @@ import axios from 'axios';
 import { Product } from './cartTypes';
 
 // Action Types (if needed for external usage)
-export const CART_ADD = 'cart/addToCartAsync';
-export const CART_REMOVE = 'cart/removeFromCartAsync';
+export const CART_ADD = 'addToCartAsync';
+export const CART_REMOVE = 'removeFromCartAsync';
+export const LOAD_DATA ='loadDataAsync'
 
 // Async Actions
 export const addToCartAsync = createAsyncThunk(
