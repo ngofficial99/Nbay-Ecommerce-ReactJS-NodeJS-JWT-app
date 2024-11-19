@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 import "../style/Header.css";
 
 const Header: React.FC = () => {
+   const navigate = useNavigate();
+
   return (
     <header className="header">
       <div className="header-logo">
@@ -20,9 +23,9 @@ const Header: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="/cart">
-              <i className="fafa-shopping-cart"></i> Cart
-            </a>
+            
+              <button onClick={() => {navigate("/cart")}} className="fafa-shopping-cart">Cart</button> 
+            
           </li>
           <li>
             <a href="/signup">
