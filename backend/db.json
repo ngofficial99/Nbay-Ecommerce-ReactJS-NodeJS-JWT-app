@@ -99,6 +99,12 @@
       "name": "Google Pixel 9 Pro",
       "price": 999,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLKE0hn5hQ3QRB8ctp9Q2Av0-rArOX1dEcEQ&s"
+    },
+    {
+      "id": "1fa8",
+      "name": "Canon PIXMA MG2470 All-in-One Inkjet Printer ",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/10/UM/BE/DH/16384543/canon-pixma-g2010-multifunction-printer.jpg",
+      "price": 100
     }
   ],
   "cart": [
@@ -107,18 +113,6 @@
       "name": "",
       "price": 189.99,
       "image": "xyz"
-    },
-    {
-      "id": "11",
-      "name": "ASUS Zephyrus G16",
-      "price": 2499,
-      "image": "https://www.cnet.com/a/img/resize/439f1bab1c7506b26c41bea9ac933426aa08dc93/hub/2024/07/11/ab09dd4f-7687-4778-b102-eb5c12bac964/asus-rog-zephyrus-g16-6120.jpg?auto=webp&fit=crop&height=362&width=644"
-    },
-    {
-      "id": "3",
-      "name": "Amazon Echo Dot (5th Gen)",
-      "price": 59.99,
-      "image": "https://media.croma.com/image/upload/v1730269948/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/269863_11_ulomfy.png"
     }
   ]
 }
