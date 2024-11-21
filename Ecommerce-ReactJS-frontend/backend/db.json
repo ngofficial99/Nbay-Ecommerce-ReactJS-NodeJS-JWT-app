@@ -107,6 +107,24 @@
       "name": "",
       "price": 189.99,
       "image": "xyz"
+    },
+    {
+      "id": "3",
+      "name": "Amazon Echo Dot (5th Gen)",
+      "price": 59.99,
+      "image": "https://media.croma.com/image/upload/v1730269948/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/269863_11_ulomfy.png"
+    },
+    {
+      "id": "1",
+      "name": "Apple AirPods Pro (2nd Gen)",
+      "price": 249.99,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/apple-air-pods-2nd-generation-1663778472.jpg?crop=0.501xw:1.00xh;0.249xw,0&resize=640:*"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy Watch 6",
+      "price": 329.99,
+      "image": "https://image-us.samsung.com/us/watches/galaxy-watch6-classic/images/galaxy-watch6-classic-roaming-bottom-mo.jpg"
     }
   ]
 }

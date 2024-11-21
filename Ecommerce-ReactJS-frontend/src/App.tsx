@@ -11,7 +11,7 @@ import ProductManagement from "./components/ProductManagement";
 import EditProduct from "./components/EditProduct";
 import { useParams } from "react-router-dom";
 import Cart from "./components/Cart";
-import { ProtectedRoute } from './components/Login';
+import { ProtectedRoute } from "./components/Login";
 import Login from "./components/Login";
 function App() {
   // const [userId, setUserId] = useState(1);
@@ -21,15 +21,19 @@ function App() {
   // };
   const EditProductWrapper = () => {
     const { id } = useParams();
-    
+
     // Convert `id` to a number as EditProduct expects a number for `productId`
     const productId = id ? parseInt(id) : null;
-  
+
     return productId !== null ? (
       <EditProduct
         productId={productId}
-        onClose={() => {/* handle close action here, e.g., navigate away */}}
-        onProductUpdated={(updatedProduct) => {/* handle product update here */}}
+        onClose={() => {
+          /* handle close action here, e.g., navigate away */
+        }}
+        onProductUpdated={(updatedProduct) => {
+          /* handle product update here */
+        }}
       />
     ) : (
       <div>Product not found</div>
@@ -38,32 +42,35 @@ function App() {
 
   return (
     <div className="App">
-      
       <Router>
-      <Header></Header>
+        <Header></Header>
         <Routes>
-    
           <Route path="/" Component={ProductList} />
           <Route path="/userlist" Component={UserList} />
           <Route path="/edituser/:id" element={<EditUser />} />
           <Route path="/signup" Component={Signup} />
-          <Route 
-          path="/productmanagement" 
-          element={
-            <ProtectedRoute>
-              <ProductManagement />
-            </ProtectedRoute>
-          } 
-        />
-          <Route path="/addProduct" Component={AddProduct} />
-          <Route path="/editProduct:/id" element={<EditProductWrapper/>} />
-          <Route path="/cart" Component={Cart}/>
-          <Route path="login" Component={Login}/>
-        
-
+          <Route
+            path="/productmanagement"
+            element={
+              <ProtectedRoute>
+                <ProductManagement />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/addProduct"
+            element={
+              <ProtectedRoute>
+                <AddProduct />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/editProduct:/id" element={<EditProductWrapper />} />
+          <Route path="/cart" Component={Cart} />
+          <Route path="login" Component={Login} />
         </Routes>
       </Router>
- 
+
       {/* // <button onClick={() => handleUserChange(1)}>User 1</button>
     // <button onClick={() => handleUserChange(2)}>User 2</button>
     // <button onClick={() => handleUserChange(4)}>User 3</button> */}

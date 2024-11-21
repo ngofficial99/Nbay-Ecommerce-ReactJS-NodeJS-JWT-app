@@ -66,6 +66,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       margin: '4px 0'
     },
     button: {
+      
       backgroundColor: isLoading ? '#cbd5e0' : '#4299e1',
       color: 'white',
       border: 'none',
@@ -92,7 +93,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
       <h4 style={cardStyles.title}>{product.name}</h4>
       <p style={cardStyles.price}>${product.price}</p>
-      <p style={cardStyles.productId}>Product Id: {product.id}</p>
+    
       <button 
         onClick={() => handleAddToCart(product)}
         disabled={isLoading}
